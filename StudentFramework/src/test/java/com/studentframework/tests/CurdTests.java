@@ -51,7 +51,7 @@ public class CurdTests extends TestBase {
         request.createStudent(firstName,lastName,email,
                         programme,courses).then()
                 .spec(SpecFactory.getGenericResponseSpec())
-                .statusCode(123);
+                .statusCode(201);
     }
 
     @Tag("Sanity")
